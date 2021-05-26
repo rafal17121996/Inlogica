@@ -1,0 +1,18 @@
+.Home{
+    background-color: white;
+    &__text{
+        font-size: 4vw;
+    }
+    &__text_wrapper{
+        margin-left: 30px;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    &__plus-btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

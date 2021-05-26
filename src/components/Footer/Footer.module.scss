@@ -1,0 +1,49 @@
+.Footer{
+    background-color: black;
+    color: #808080;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+    }
+    &__text-wrapper{
+        padding: 150px 100px 75px 100px;
+    }
+    &__scroll-btn{
+        
+        img{
+            cursor: pointer;
+            margin-left: 30px;
+           width: 50px; 
+        }
+    }
+    &__partner{
+        float: right;
+        transform: translateY(-20px);
+        img{
+            width: 150px;
+            margin-right: 40px;
+          }
+    }
+    &__bottom{
+        border-top: 1px solid #808080;
+        margin-top: 50px;
+    }
+    &__bottom-wrapper{
+        position: relative;
+        display: flex;
+        padding-bottom: 50px;
+        p{
+           padding-right: 10px;
+           padding-left: 10px;
+        }
+    }
+    &__logo{
+        position: absolute;
+        top: 0;
+        right: 15px;
+        img{
+            width: 150px;
+          }
+    }
+}

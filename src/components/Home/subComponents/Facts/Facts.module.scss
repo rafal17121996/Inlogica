@@ -1,0 +1,31 @@
+.Facts{
+    min-height: 100vh;
+    background-color: #FFE600;
+    display: flex;
+    align-items: center;
+    &__left{
+        width: 50%;
+        h1{
+            padding-left: 50px;
+            font-size: 5rem;
+            font-weight: 400;
+        }
+    }
+    &__right{
+        width: 50%;
+        display: flex;
+    }
+    &__column{
+        width: 50%;
+    }
+    &__item{
+        h3{
+            font-size: 5rem;
+            font-weight: 400;
+        }
+        p{
+            font-size: 2rem;
+            font-weight: 200;
+        }
+    }
+}

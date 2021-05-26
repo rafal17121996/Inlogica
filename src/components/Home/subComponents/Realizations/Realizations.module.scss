@@ -1,0 +1,75 @@
+.Realizations {
+  min-height: 100%;
+  &__title {
+    font-size: 5rem;
+    font-weight: 500;
+    padding-left: 50px;
+  }
+  &__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+    width: 100%;
+  }
+
+  &__items {
+    margin-bottom: 24px;
+    @media (min-width: 960px) {
+      display: flex;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+    text-decoration: none;
+    @media screen and (max-width: 960px) {
+      width: 70%;
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 74.5%;
+    overflow: hidden;
+    background-color: #ffe600;
+    button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display:block;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background-color: transparent;
+      cursor: pointer;
+  } 
+  }
+  &__title {
+    border-bottom: 1px solid #ffe600;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  &__item-wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+  }
+}

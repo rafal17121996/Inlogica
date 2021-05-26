@@ -1,0 +1,69 @@
+$base-color: black;
+
+.Navbar {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  z-index: 999;
+  &__nav-item {
+    height: 75px;
+    margin-bottom: 50px;
+  }
+  &__nav-links {
+    color: $base-color;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      transition: all 0.2s ease-out;
+    }
+  }
+  &__nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: -100%;
+    transition: all 0.3s ease;
+    li:first-child {
+      margin-top: 60px;
+    }
+  }
+  &__nav-menu_active {
+    background-color: #FFE600;
+    top: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  &__nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    font-size: 4rem;
+  }
+  &__logo {
+    position: fixed;
+    z-index: 999;
+    top: 20px;
+    left: 20px;
+  }
+  &__menu-button {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 999;
+  }
+  &__flags {
+    cursor: pointer;
+  }
+}
